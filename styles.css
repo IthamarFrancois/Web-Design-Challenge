@@ -19,6 +19,15 @@ h3 {
   background: #5191fd;
 }
 
+.navbar-brand {
+  padding: 10px;
+  font-size: 40px;
+  background-color: turquoise;
+  color: white;
+  
+}
+
+
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
@@ -62,6 +71,14 @@ h3 {
   visibility: hidden;
 }
 
+footer {
+  background-color: turquoise;
+  color: white;
+  border-top-color: whitesmoke ;
+  position: fixed;
+  text-align: center;
+}  
+
 /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
 @media (max-width: 480px) {
   .navbar li {
@@ -80,4 +97,6 @@ h3 {
   #nav-select {
     visibility: visible;
   }
+
+
 }
