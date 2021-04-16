@@ -24,6 +24,7 @@
 
 <body>
 <!-- Navigation -->
+<div class = "navigation">
   <nav class = "navbar navbar-expand-lg">
     <a class = "navbar-brand" href= "../index.html"> LATITUDE </a>
     
@@ -55,9 +56,67 @@
       </ul>
     </div>
   </nav>
+</div>
+
+<!-- Content Grid -->
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-7 col-md-12">
+
+      <div class = "box" style = "padding-bottom: 130 px;">
+        <h3 class = "title"> CLOUDINESS </h3>
+        <hr> <img src = "../Resources/assets/images/3_vsCloudiness.png" class = "visualizations rounded float-left" alt = "Cloudiness">
+        
+        <p>
+          The density/concentration of cloud coverage increases slightly more in the Northern hemisphere the further north you go 
+          (as opposed to the futher south you go in the Southern hemisphere) but the difference is not substantial. The data doesn't indicate that
+          there is a strong coorelation between city latitude and it's projected cloudines.
+
+        </p>
+            
+      </div>
+    </div>
+
+    <!-- <div class = "col-md-4 col-sm-4 page-visuals"> -->
+    <div class = "col-lg-5 col-md-12">
+    
+      <!-- <div class = "page-text"> -->
+      <div class = "box">
+        
+        
+        <h3> VISUALIZATIONS </h3>
+        <h5> Click on any plot to get an in-depth analysis. </h5><hr>
 
 
+        <div class = "visual-container">
+          
+          <div class = "image">
+            <h3> Latitude vs Max Temp </h3>
+            <a href = "../Visualizations/MaxTemp.html"> <img src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp" </a>
+          </div>
 
+          <div class = "image">
+            <h3> Latitude vs Humidity </h3>
+            <a href = "../Visualizations/Humidity.html"> <img src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity" </a>
+          </div>
+
+          <div class = "image">
+            <h3> Latitude vs Cloudiness </h3>
+            <a href = "../Visualizations/Cloudiness.html"> <img src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness" </a>
+          </div>
+
+          <div class = "image">
+            <h3> Latitude vs Wind Speed </h3>
+            <a href = "../Visualizations/Wind.html"> <img src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed" </a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Footer Signature -->
 <footer>
