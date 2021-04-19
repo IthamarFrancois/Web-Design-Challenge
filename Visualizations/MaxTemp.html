@@ -3,29 +3,160 @@
 <!DOCTYPE html>
 <html land="en">
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
   
-  <!-- Bootstrap Stylesheet/CSS Links -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles.css">
+  <!-- Meta Set -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <!-- Bootstrap Stylesheet/CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <link rel="stylesheet" href="../styles.css">
 
-  <title> Latitude </title> 
+    <title> Latitude </title> 
 
-</head>
+  </head>
+  <!-- End Meta -->
 
-<!-- Bootstrap Javascript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
 
-<body>
-<!-- Navigation -->
+  <!-- Body -->
+  <body>
+    
+    
+    <!-- Navigation Bar -->
+    <div class = "navigation">
+      <nav class = "navbar navbar-expand-lg">
+    
+        <a class = "navbar-brand" style = "background-color: #19B39C;" href= "../index.html"> LATITUDE </a> <!--19B39C-->
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
+        <span class = "navbar-toggler-icon"> </span>
+        </button>
+    
+        <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+          <ul class = "navbar-nav ml-auto">
+        
+            <li class = "nav-item dropdown">
+          
+              <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> PLOTS </a>
+              <div class = "dropdown-menu" aria-labelledby = "navbarNavDropdownMenuLink">
+                <a class = "dropdown-item" href = "MaxTemp.html"> Max Temperature </a>
+                <a class = "dropdown-item" href = "Humidity.html"> Humidity </a>
+                <a class = "dropdown-item" href = "Cloudiness.html"> Cloudiness </a>
+                <a class = "dropdown-item" href = "WindSpeed.html"> Wind Speed </a>
+              </div>
+
+            </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "Comparisons.html"> COMPARISONS </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "Data.html"> DATA </a> </li>
+        
+        
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    <!-- End Navigation Bar -->
 
 
 
-</body>
+    <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    <!-- Content Grid -->
+    <div class = "container">
+      <div class = "row">
+      
+        
+        <!-- Left Content -->
+        <div class = "col-md-9">
+      
+          <div class = "box" style = "position:relative; left:-250px; top:5px;" >
+        
+            <h3 class = "title"> CLOUDINESS </h3>
+            <div class = "main_image">
+              
+              <img src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Cloudiness" id = "width100"><br>
+        
+              <p>
+                The density/concentration of cloud coverage increases slightly more in the Northern hemisphere the further north you go 
+                (as opposed to the futher south you go in the Southern hemisphere) but the difference is not substantial. The data doesn't indicate that
+                there is a strong coorelation between city latitude and it's projected cloudines.
+        
+              </p>
+            </div>
+        
+          </div>
+
+        </div>
+        <!-- End Left Content -->
+
+        
+        
+        <!-- Right Content -->
+        <div class = "col-m4-3 col-sm-3 RightVisual" >
+          <div class = "smallbox">
+            
+            <h3> VISUALIZATIONS </h3>
+            <h4> Click on any plot to get an in-depth analysis. </h4><hr>
+      
+      
+            <!-- <div class = "container"> -->
+              <div class = "col-sm-3">
+              <div class = "small_image">
+                <h3> Latitude vs Max Temp </h3>
+                <a href = "../Visualizations/MaxTemp.html"> <img src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp" </a>
+              </div>
+          
+              <div class = "small_image">
+                <h3> Latitude vs Humidity </h3>
+                <a href = "../Visualizations/Humidity.html"> <img src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity" </a>
+              </div>
+          
+              <div class = "small_image">
+                <h3> Latitude vs Cloudiness </h3>
+                <a href = "../Visualizations/Cloudiness.html"> <img src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness" </a>
+              </div>
+          
+              <div class = "small_image">
+                <h3> Latitude vs Wind Speed </h3>
+                <a href = "../Visualizations/Wind.html"> <img src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed" </a>
+              </div>
+          
+            </div>
+      
+      
+          </div>
+        </div>
+        <!-- End Right Content -->
+
+
+      </div>
+    </div>
+    <!-- End Content  Grid-->
+  
+  </body>
+  <!-- End Body -->
+
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+  
+  
+  <!-- Footer Signature -->
+  <br><br>
+  <footer>
+    <div class="footer">&copy; Ithamar Francois 2021. </div>
+  </footer>
+
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
 </html>
