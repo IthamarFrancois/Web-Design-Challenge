@@ -14,9 +14,9 @@
     <!-- Bootstrap Stylesheet/CSS Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../reset.css"> -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../Visualizations/Bonus_styles.css">
 
-    <title> Cloudiness </title> 
+    <title> Bonus_Humidity </title> 
 
   </head>
   <!-- End Meta -->
@@ -31,12 +31,12 @@
     <div class = "navigation">
       <nav class = "navbar navbar-expand-lg">
     
-        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../index.html"> HOME </a> <!--Main Color accent: #19B39C-->
+        <a class = "navbar-brand" style = "background-color: #b31954;" href = "../Visualizations/Bonus_index.html"> BONUS HOME </a> <!--Main Color accent: #b31954; -->
         <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
           <span class = "navbar-toggler-icon"> </span>
         </button>
 
-        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../Visualizations/Bonus_Cloudiness.html"> BONUS CLOUDINESS </a> <!--Main Color accent: #19B39C-->
+        <a class = "navbar-brand" style = "background-color: #b31954;" href = "../Visualizations/Humidity.html""> HUMIDITY </a> <!--Main Color accent: #b31954; -->
         <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
           <span class = "navbar-toggler-icon"> </span>
         </button>
@@ -50,17 +50,17 @@
               <!-- 'PLOTS' Dropdown Bar -->
               <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> PLOTS </a>
               <div class = "dropdown-menu" aria-labelledby = "navbarNavDropdownMenuLink">
-                <a class = "dropdown-item" href = "../Visualizations/MaxTemp.html"> Max Temperature </a>
-                <a class = "dropdown-item" href = "../Visualizations/Humidity.html"> Humidity </a>
-                <a class = "dropdown-item" href = "../Visualizations/Cloudiness.html"> Cloudiness </a>
-                <a class = "dropdown-item" href = "../Visualizations/WindSpeed.html"> Wind Speed </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_MaxTemp.html"> Max Temperature </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_Humidity.html"> Humidity </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_Cloudiness.html"> Cloudiness </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_WindSpeed.html"> Wind Speed </a>
               </div>
 
             </li>
 
             <!-- 'Comparisons/Data' Bar options -->
-            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Comparisons.html"> COMPARISONS </a> </li>
-            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Data.html"> DATA </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Comparisons.html"> COMPARISONS </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Data.html"> DATA </a> </li>
         
         
           </ul>
@@ -87,18 +87,15 @@
           <div class = "box" style = "position:relative; left:-250px; top:5px;">
           
             <!-- Font style change to title: BOLD, ITALIC, & UNDERLINE -->
-            <h1 class = "title" id = "BoldTalicLine" > CLOUDINESS </h1>
+            <h1 class = "title" id = "BoldTalicLine" > BONUS HUMIDITY </h1>
             
               <!-- CSS to enlarge 'main' graph/jpg -->
-              <img class = "main-image" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Cloudiness"><br>
+              <img class = "main-image" src = "../Resources/assets/images/Lat_vs_Humidity.jpg" alt = "Bonus_Humidity"><br>
         
               <!-- Paragraph first line is slightly indented, and paragraph overall (via CSS) is indented all around -->
               <p style = "text-indent: 10px;">
-                This dataset doesn't indicate there is a strong coorelation between city latitude 
-                and it's 'cloudiness' as cloud coverage is consistently varied across the globe depending on latitude.
-                If anything, the number of cities increase slightly with cloud concentration levels of 0%, 80%, and 100%. 
-                This rise occurs the further north (right/positive latitude) you travel as opposed to further south (left/negative latitude). 
-                The difference is not substantial. 
+                Seemingly there isn't any discernable pattern or relation between Humidity and the Latitude. 
+                The humidity % is uniformly scattered, and generally above 60%, no matter how close/far away from the Equator you are.
         
               </p>
             
@@ -124,37 +121,37 @@
                 </div>
               </div>
               
-              
+              <!-- Adding custom weather graph/jpg taken from previous API homework (WeatherPY) -->
               <div class = "row">
                 <div class = "col-sm-3 col-md-6">
-                  
+                             
                   <h6> Max Temperature </h6>
-                  <a href = "../Visualizations/MaxTemp.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a> 
+                  <a href = "../Visualizations/Bonus_MaxTemp.html"> 
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_MaxTemp.jpg" alt = "Latitude vs. Max Temp"> </a> 
 
                 </div>
                 <div class = "col-sm-3 col-md-6">
-                  
+                             
                   <h6> Humidity </h6>
-                  <a href = "../Visualizations/Humidity.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a> 
+                  <a href = "../Visualizations/Bonus_Humidity.html"> 
+                    <img class = "thumbnail panel selected" src = "../Resources/assets/images/Lat_vs_Humidity.jpg" alt = "Latitude vs. Humidity"> </a> 
 
                 </div>
               </div>
                 
               <div class = "row">
                 <div class = "col-sm-3 col-md-6">
-                  
+                               
                   <h6> Cloudiness </h6>
-                  <a href = "../Visualizations/Cloudiness.html"> 
-                    <img class = "thumbnail panel selected" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a> 
+                  <a href = "../Visualizations/Bonus_Cloudiness.html"> 
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_Cloudiness.jpg" alt = "Latitude vs.Cloudiness"> </a> 
   
                 </div>
                 <div class = "col-sm-3 col-md-6">
-                  
+                               
                   <h6> Wind Speed </h6>
-                  <a href = "../Visualizations/WindSpeed.html">
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a>
+                  <a href = "../Visualizations/Bonus_WindSpeed.html">
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_WindSpeed.jpg" alt = "Latitude vs. Wind Speed"> </a>
   
                 </div>  
               </div>

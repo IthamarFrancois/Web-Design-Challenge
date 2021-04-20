@@ -22,7 +22,7 @@
 /* Allows border coloring of navbar selections from mouse hover */
 .nav-link:hover{
   background-color:white;
-  border: 5px solid yellowgreen;
+  border: 5px solid rgb(101, 229, 238);
 
 }
 
@@ -39,7 +39,7 @@
 
 /* Getting rid of the default link styles here */
 .navbar li a {
-  color: #19B39C;
+  color: #b31954;
   text-decoration: none;
 }
 
@@ -60,25 +60,25 @@
 .header h1 {
   padding: 60px;
   margin: 0;
-  color: #19B39C;
+  color: #b31954;
   text-align: center;
 }
 
 /* Colors PLOTS options/dropdown selections */
 .dropdown-item {
-  color: #19B39C;
+  color: #b31954;
   background-color: white;
 }
 
 .dropdown-item:hover {
 
-  background-color: yellowgreen;
+  background-color: rgb(101, 229, 238);
 
 } 
 
 /* Add square border around mouse hover selections */
 .navbar-brand:hover {
-  color: yellowgreen;
+  color: rgb(101, 229, 238);
 }
 
 
@@ -122,10 +122,6 @@ h5 {
   text-align: center;
 }
 
-h6 {
-  font-size: 15px;
-  text-align: center;
-}
 
 /* Formatting of paragraph settings to have indents/padding all around */
 p {
@@ -161,7 +157,7 @@ p {
 
 .row {
   width: 90%;
-  margin: 20px auto;
+  margin: 20px;
 }
 
 
@@ -170,7 +166,7 @@ p {
 .box {
   
   background-color: white;
-  color: #19B39C;
+  color: #b31954;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -182,7 +178,7 @@ p {
 .smallbox {
   
   background-color: white;
-  color: #19B39C;
+  color: #b31954;
   margin-top: 10px;
   
   padding-top: 10px;
@@ -200,18 +196,12 @@ p {
 }
 
 
-.comparison_size {
-
-  width: 700px;
-
-}
-
 /* Sets smaller graph's sizes/positions */
 .thumbnail {
 
   width: 190px;
   margin-right: 1px;
-  border: 1px solid #19B39C;
+  border: 1px solid #b31954;
   padding-bottom: 10px;
 
 }
@@ -220,7 +210,7 @@ p {
 /* Sets a border around small graph that matches main graph "selection" */
 .selected {
 
-  border: 5px solid yellowgreen;
+  border: 5px solid rgb(101, 229, 238);
 
 }
 
@@ -228,9 +218,9 @@ p {
 /* Mouse hover selection box of small graphs */
 .active, .panel:hover {
 
-  border-color: yellowgreen;
+  border-color: rgb(101, 229, 238);
   border-style: solid;
-  border: 10px solid yellowgreen;
+  border: 10px solid rgb(101, 229, 238);
 }
 
 /* Giving the .post element margin on 3 sides */
@@ -243,12 +233,12 @@ p {
 
 /* Sets the footer */
 footer {
-  background-color:#19B39C;
+  background-color:#b31954;
   color: white;
   border-top-color: whitesmoke;
   border-top-style: dotted;
   border-top-width: 5px;
-  border-top-color: yellowgreen;
+  border-top-color: rgb(101, 229, 238);
   position: fixed;
   text-align: center;
   width: 100%;

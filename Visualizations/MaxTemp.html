@@ -1,4 +1,4 @@
-<!-- Reference code taken from class module "308-Ins_ResponsiveCols" -->
+<!-- Reference code originally taken from class module "307-Stu_BootstrapComponents" -->
 
 <!DOCTYPE html>
 <html land="en">
@@ -16,7 +16,7 @@
     <!-- <link rel="stylesheet" href="../reset.css"> -->
     <link rel="stylesheet" href="../styles.css">
 
-    <title> Latitude </title> 
+    <title> Max Temperature </title> 
 
   </head>
   <!-- End Meta -->
@@ -31,27 +31,36 @@
     <div class = "navigation">
       <nav class = "navbar navbar-expand-lg">
     
-        <a class = "navbar-brand" style = "background-color: #19B39C;" href= "../index.html"> LATITUDE </a> <!--19B39C-->
+        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../index.html"> HOME </a> <!--Main Color accent: #19B39C-->
         <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
-        <span class = "navbar-toggler-icon"> </span>
+          <span class = "navbar-toggler-icon"> </span>
         </button>
+
+        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../Visualizations/Bonus_MaxTemp.html"> BONUS MAX TEMP </a> <!--Main Color accent: #19B39C-->
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
+          <span class = "navbar-toggler-icon"> </span>
+        </button>
+
     
         <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
           <ul class = "navbar-nav ml-auto">
         
             <li class = "nav-item dropdown">
-          
+              
+              <!-- 'PLOTS' Dropdown Bar -->
               <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> PLOTS </a>
               <div class = "dropdown-menu" aria-labelledby = "navbarNavDropdownMenuLink">
-                <a class = "dropdown-item" href = "MaxTemp.html"> Max Temperature </a>
-                <a class = "dropdown-item" href = "Humidity.html"> Humidity </a>
-                <a class = "dropdown-item" href = "Cloudiness.html"> Cloudiness </a>
-                <a class = "dropdown-item" href = "WindSpeed.html"> Wind Speed </a>
+                <a class = "dropdown-item" href = "../Visualizations/MaxTemp.html"> Max Temperature </a>
+                <a class = "dropdown-item" href = "../Visualizations/Humidity.html"> Humidity </a>
+                <a class = "dropdown-item" href = "../Visualizations/Cloudiness.html"> Cloudiness </a>
+                <a class = "dropdown-item" href = "../Visualizations/WindSpeed.html"> Wind Speed </a>
               </div>
 
             </li>
-            <li class = "nav-item"> <a class = "nav-link" href = "Comparisons.html"> COMPARISONS </a> </li>
-            <li class = "nav-item"> <a class = "nav-link" href = "Data.html"> DATA </a> </li>
+
+            <!-- 'Comparisons/Data' Bar options -->
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Comparisons.html"> COMPARISONS </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Data.html"> DATA </a> </li>
         
         
           </ul>
@@ -71,24 +80,26 @@
       <div class = "row">
       
         
-        <!-- Left Content -->
-        <div class = "col-md-9">
-      
-          <div class = "box" style = "position:relative; left:-250px; top:5px;" >
+        <!-- Left Content Section -->
+        <div class="col-lg-7 col-sm-12" >
+
+          <!-- Postions main graph/jpg offcenter left to allow more room/size -->
+          <div class = "box" style = "position:relative; left:-250px; top:5px;">
+          
+            <!-- Font style change to title: BOLD, ITALIC, & UNDERLINE -->
+            <h1 class = "title" id = "BoldTalicLine" > MAX TEMPERATURE </h1>
+            
+              <!-- CSS to enlarge 'main' graph/jpg -->
+              <img class = "main-image" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "MaxTemp"><br>
         
-            <h3 class = "title"> CLOUDINESS </h3>
-            <div class = "main_image">
-              
-              <img src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Cloudiness" id = "width100"><br>
-        
-              <p>
-                The density/concentration of cloud coverage increases slightly more in the Northern hemisphere the further north you go 
-                (as opposed to the futher south you go in the Southern hemisphere) but the difference is not substantial. The data doesn't indicate that
-                there is a strong coorelation between city latitude and it's projected cloudines.
-        
+              <!-- Paragraph first line is slightly indented, and paragraph overall (via CSS) is indented all around -->
+              <p style = "text-indent: 10px;">
+                This dataset shows the highest max temperatures are in cities near the Equator (0) reaching almost 100 degrees (with a few outliers going above that 20 degrees 
+                south of the Equator). As you go further north (right/positive latitudes), away from the Equator, the max temps drop as you get  
+                closer to the north pole. It seems the Southern Hemisphere is warmer than the North which may be due to the tilt in the Earth's axis.
+                        
               </p>
-            </div>
-        
+            
           </div>
 
         </div>
@@ -96,48 +107,68 @@
 
         
         
-        <!-- Right Content -->
-        <div class = "col-m4-3 col-sm-3 RightVisual" >
-          <div class = "smallbox">
+        <!-- Right Content Section -->
+        <div class="col-lg-5 col-sm-12" >
+          <div class = "box" style = "position:relative; left:0px; top:5px;"> <!-- Format to mirror left side box -->
+
             
-            <h3> VISUALIZATIONS </h3>
-            <h4> Click on any plot to get an in-depth analysis. </h4><hr>
-      
-      
-            <!-- <div class = "container"> -->
-              <div class = "col-sm-3">
-              <div class = "small_image">
-                <h3> Latitude vs Max Temp </h3>
-                <a href = "../Visualizations/MaxTemp.html"> <img src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp" </a>
+            <div class = "container">
+              <div class = "row">
+                <div class = "col-md-12">
+              
+                  <h2 id = "BoldTalicLine"> VISUALIZATIONS </h2>
+                  <h5> Click on any plot to get an in-depth analysis. </h5>
+
+                </div>
               </div>
-          
-              <div class = "small_image">
-                <h3> Latitude vs Humidity </h3>
-                <a href = "../Visualizations/Humidity.html"> <img src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity" </a>
+              
+              
+              <div class = "row">
+                <div class = "col-sm-3 col-md-6">
+                             
+                  <h6> Max Temperature </h6>
+                  <a href = "../Visualizations/MaxTemp.html"> 
+                    <img class = "thumbnail panel selected" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a> 
+
+                </div>
+                <div class = "col-sm-3 col-md-6">
+                             
+                  <h6> Humidity </h6>
+                  <a href = "../Visualizations/Humidity.html"> 
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a> 
+
+                </div>
               </div>
-          
-              <div class = "small_image">
-                <h3> Latitude vs Cloudiness </h3>
-                <a href = "../Visualizations/Cloudiness.html"> <img src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness" </a>
+                
+              <div class = "row">
+                <div class = "col-sm-3 col-md-6">
+                               
+                  <h6> Cloudiness </h6>
+                  <a href = "../Visualizations/Cloudiness.html"> 
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a> 
+  
+                </div>
+                <div class = "col-sm-3 col-md-6">
+                               
+                  <h6> Wind Speed </h6>
+                  <a href = "../Visualizations/WindSpeed.html">
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a>
+  
+                </div>  
               </div>
-          
-              <div class = "small_image">
-                <h3> Latitude vs Wind Speed </h3>
-                <a href = "../Visualizations/Wind.html"> <img src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed" </a>
-              </div>
-          
+
             </div>
-      
-      
+
           </div>
         </div>
         <!-- End Right Content -->
-
-
+      
+      
       </div>
-    </div>
+    </div>    
     <!-- End Content  Grid-->
   
+
   </body>
   <!-- End Body -->
 
@@ -148,7 +179,7 @@
   <!-- Footer Signature -->
   <br><br>
   <footer>
-    <div class="footer">&copy; Ithamar Francois 2021. </div>
+    <div class="footer">&copy; Ithamar Francois (2021). </div>
   </footer>
 
 
@@ -160,3 +191,6 @@
 
 
 </html>
+<!-- End HTML -->
+
+<!--------------------------------------------------      Ithamar Francois      --------------------------------------------------------------------->
