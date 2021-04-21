@@ -78,7 +78,7 @@
 
 /* Add square border around mouse hover selections */
 .navbar-brand:hover {
-  color: yellowgreen;
+  color: #b31954;
 }
 
 
@@ -91,17 +91,29 @@ body {
 
 
 /* Formatting of various font/titles */
+/* 
+h2 {
+  font-size: 40px;
+  padding-left: 15px;
+  text-align: center;
+}
+*/
+
+
+
 h1 {
   font-size: 50px;
   padding-left: 15px;
   text-align: center;
-  }
+}
+
 
 h2 {
-    font-size: 40px;
-    padding-left: 15px;
-    text-align: center;
-    }
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
 
 
 h3 {
@@ -202,7 +214,13 @@ p {
 
 .comparison_size {
 
-  width: 700px;
+  width: 600px;
+
+}
+
+.summary_size {
+
+  width: 500px;
 
 }
 
