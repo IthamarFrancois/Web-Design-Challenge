@@ -27,8 +27,10 @@
   <body>
     
     
-    <!-- Navigation Bar -->
-    <div class = "navigation">
+  <!-- Navigation Bar -->
+  <div class = "navigation">
+    <div class = "col-lg-12 col-sm-12">
+
       <nav class = "navbar navbar-expand-lg">
     
         
@@ -44,19 +46,19 @@
             <li class = "nav-item dropdown">
               
               <!-- 'PLOTS' Dropdown Bar -->
-              <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> PLOTS </a>
+              <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> +PLOTS </a>
               <div class = "dropdown-menu" aria-labelledby = "navbarNavDropdownMenuLink">
-                <a class = "dropdown-item" href = "../Visualizations/Bonus_MaxTemp.html"> Max Temperature </a>
-                <a class = "dropdown-item" href = "../Visualizations/Bonus_Humidity.html"> Humidity </a>
-                <a class = "dropdown-item" href = "../Visualizations/Bonus_Cloudiness.html"> Cloudiness </a>
-                <a class = "dropdown-item" href = "../Visualizations/Bonus_WindSpeed.html"> Wind Speed </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_MaxTemp.html"> Bonus Max Temp </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_Humidity.html"> Bonus Humidity </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_Cloudiness.html"> Bonus Cloudiness </a>
+                <a class = "dropdown-item" href = "../Visualizations/Bonus_WindSpeed.html"> Bonus Wind Speed </a>
               </div>
 
             </li>
 
             <!-- 'Comparisons/Data' Bar options -->
-            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Comparisons.html"> COMPARISONS </a> </li>
-            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Data.html"> DATA </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Comparisons.html"> +COMPARISONS </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Bonus_Data.html"> +DATA </a> </li>
         
         
           </ul>
@@ -64,6 +66,7 @@
 
       </nav>
     </div>
+  </div>
     <!-- End Navigation Bar -->
 
 
@@ -72,7 +75,7 @@
 
 
     <!-- Content Grid -->
-    <div class = "container">
+    <div class = "container" style = "padding: 2%">
       <div class = "row">
         
         
@@ -80,20 +83,21 @@
         <div class = "col-lg-7 col-sm-12">
 
           <!-- Postions main graph/jpg offcenter left to allow more room/size -->
-          <div class = "box" style = "width:150%; position:relative; left:-280px; top:5px; ">
+          <div class = "box" style = "top:5px;">
 
           
-            <h1 id = "BoldTalicLine"; style = "text-align: left;"> Summary: Latitude vs. X </h1><hr>
+            <h2 id = "BoldTalicLine"; style = "text-align: left;"> Summary: </h2>
+            <h2 id = "BoldTalicLine"; style = "text-align: left;"> Latitude vs. X </h2><hr>
           
-            <div class = "row">
-              <img class = "summary_size" src = "../Resources/assets/images/Lat_vs_MaxTemp.jpg" alt = "Latitude vs. Max Temp"> </a> 
+            
+              <img class = "summary_size" src = "../Resources/assets/images/Lat_vs_MaxTemp.jpg" alt = "Latitude vs. Max Temp">  
 
                                             
                 <!-- Paragraph first line is slightly indented, and paragraph overall (via CSS) is indented all around -->
               <p style = "text-indent: 10px; text-align:justify;">
                 
-                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
-                we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the dataset, 
+                The purpose of this BONUS project step was to analyze how weather changes as you get closer to the equator using another dataset from a previous homework. 
+                To accomplish this bonus analysis, we first the data (from OpenWeatherMap API) to use a dataset on over 650 cities. After assembling the dataset, 
                 we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: 
                 Temperature (F) vs. Latitude, Cloudiness (%) vs. Latitude, Wind Speed (mph) vs. Latitude, and Humidity (%) vs Latitude. 
                 This site provides the source data and visualizations created as part of the analysis, as well as, 
@@ -101,8 +105,8 @@
               
               </p>
 
-            </div>
           </div>
+        
         
 
         </div>
@@ -111,51 +115,55 @@
         
         
         <!-- Right Content Section -->
-        <div class="col-lg-5 col-sm-12" >
-          <div class = "box" style = "position:relative; left:0px; top:5px;"> <!-- Format to mirror left side box -->
-
+        <div class = "col-lg-5 col-sm-11">
+          <div class = "box" style = "top:5px; width: 110%; padding-bottom:15px;"> <!-- Format to mirror left side box -->
             
-            <div class = "container">
+            
               <div class = "row">
                 <div class = "col-md-12">
-              
-                  <h2 id = "BoldTalicLine"> VISUALIZATIONS </h2>
-                  <h5> Click on any plot to get an in-depth analysis. </h5>
 
+                  <h3 id = "BoldTalicLine"> VISUALIZATIONS </h3>
+                  <h5 > Click on any plot to get an in-depth analysis. </h5><br> 
+                
                 </div>
               </div>
               
-              <!-- Adding custom weather graph/jpg taken from previous API homework (WeatherPY) -->
-              <div class = "row">
-                <div class = "col-sm-3 col-md-6">
-                             
-                  <h6> Max Temperature </h6>
+              
+              
+            <div class = "container">
+              <div class = "row" style = "margin: 0% 0%;">
+                <div class = "col-sm-6 col-md-6">
+                    
+                  <h6 style = "text-align: justify;"> Bonus Max Temp </h6>
                   <a href = "../Visualizations/Bonus_MaxTemp.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_MaxTemp.jpg" alt = "Latitude vs. Max Temp"> </a> 
+                    <img class = "thumbnail panel" style = "margin: 0% 0%;" src = "../Resources/assets/images/Lat_vs_MaxTemp.jpg" alt = "Latitude vs. Max Temp"> </a><br> 
 
                 </div>
-                <div class = "col-sm-3 col-md-6">
-                             
-                  <h6> Humidity </h6>
+
+                <div class = "col-sm-6 col-md-6">
+                  
+                  <h6 style = "text-align: justify;"> Bonus Humidity </h6>
                   <a href = "../Visualizations/Bonus_Humidity.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_Humidity.jpg" alt = "Latitude vs. Humidity"> </a> 
+                    <img class = "thumbnail panel" style = "margin: 0% 3%;" src = "../Resources/assets/images/Lat_vs_Humidity.jpg" alt = "Latitude vs. Humidity"> </a><br><br>  
 
                 </div>
               </div>
                 
-              <div class = "row">
-                <div class = "col-sm-3 col-md-6">
-                               
-                  <h6> Cloudiness </h6>
+              <div class = "row" style = "margin: 0% 0%;">
+                
+                <div class = "col-sm-6 col-md-6">
+                  
+                  <h6 style = "text-align: justify;"> Bonus Cloudiness </h6>
                   <a href = "../Visualizations/Bonus_Cloudiness.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_Cloudiness.jpg" alt = "Latitude vs.Cloudiness"> </a> 
-  
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_Cloudiness.jpg" alt = "Latitude vs.Cloudiness"> </a><br> 
+                
                 </div>
-                <div class = "col-sm-3 col-md-6">
-                               
-                  <h6> Wind Speed </h6>
+                
+                <div class = "col-sm-6 col-md-6">
+
+                  <h6 style = "text-align: justify;"> Bonus Wind Speed </h6>
                   <a href = "../Visualizations/Bonus_WindSpeed.html">
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/Lat_vs_WindSpeed.jpg" alt = "Latitude vs. Wind Speed"> </a>
+                    <img class = "thumbnail panel" style = "margin: 0% 3%;" src = "../Resources/assets/images/Lat_vs_WindSpeed.jpg" alt = "Latitude vs. Wind Speed"> </a><br>
   
                 </div>  
               </div>
@@ -172,26 +180,23 @@
     <!-- End Content  Grid-->
   
 
-  </body>
-  <!-- End Body -->
-
-
   <!------------------------------------------------------------------------------------------------------------------------------------------>
   
   
-  <!-- Footer Signature -->
-  <br><br>
-  <footer>
-    <div class="footer">&copy; Ithamar Francois (2021). </div>
-  </footer>
+    <!-- Footer Signature -->
+    <br><br>
+    <footer>
+      <div class="footer">&copy; Ithamar Francois (2021). </div>
+    </footer>
 
 
-  <!-- Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
+  </body>
+  <!-- End Body -->
 
 </html>
 <!-- End HTML -->

@@ -27,8 +27,10 @@
   <body>
     
     
-    <!-- Navigation Bar -->
-    <div class = "navigation">
+  <!-- Navigation Bar -->
+  <div class = "navigation">
+    <div class = "col-lg-12 col-sm-12">
+
       <nav class = "navbar navbar-expand-lg">
     
         <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../index.html"> HOME </a> <!--Main Color accent: #19B39C-->
@@ -68,6 +70,7 @@
 
       </nav>
     </div>
+  </div>
     <!-- End Navigation Bar -->
 
 
@@ -76,54 +79,62 @@
 
 
     <!-- Content Grid -->
-    <div class = "container-fluid">
+    <div class = "container" style = "padding-top: 2%">
       <div class = "row">
-      
+          
+          
+        <!-- Left Content Section 
+        <div class = "col-lg-12 col-sm-12"> -->
         
-        <div class = "box" style = "width:100%; margin-left:30px; top:5px;">
+          
+          <div class = "compbox" style = "width:100%; margin-left: -2%; top:5px;">
 
-            <h3 id = "BoldTalicLine"; style = "text-align: left;"> Comparison: Latitude vs. X </h3>
-            <h4 style = "text-align: left;"> Click on any plot to get an in-depth analysis. </h4><hr>
+              <h3 id = "BoldTalicLine"; style = "text-align: center;"> City Latitude vs X...</h3>
+              <h4 style = "text-align: center;"> Click on plots to get an in-depth analysis. </h4><hr>
 
-              <div class = "row">
+              <div class = "container" style = "padding-bottom: 5%;">
+                <div class = "row">
+                  
+                  <div class = "col-lg-6 col-sm-12" style = "padding-bottom: 5%; margin: 5% 0%;">
+                              
+                    <h3 style = "font-weight: bold; text-align: justify;"> vs. Max Temp </h3>
+                    <a href = "../Visualizations/MaxTemp.html"> 
+                      <img class = "comparison_size panel" style = "margin: 0% -5%;" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a><br> 
+
+                  </div>
+                  <div class = "col-lg-6 col-sm-12" style = "padding-bottom: 5%; margin: 5% 0%;">
+                              
+                    <h3 style = "font-weight: bold; text-align: justify;"> vs. Humidity </h3>
+                    <a href = "../Visualizations/Humidity.html"> 
+                      <img class = "comparison_size panel" style = "margin: 0% -5%;" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a><br>
+
+                  </div>
+                </div>
                 
-                <div class = "col-md-6">
-                             
-                  <h3 style = "font-weight: bold;"> vs. Max Temperature </h3>
-                  <a href = "../Visualizations/MaxTemp.html"> 
-                    <img class = "comparison_size panel" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a> 
-
-                </div>
-                <div class = "col-mdm-6">
-                             
-                  <h3 style = "font-weight: bold;"> vs. Humidity </h3>
-                  <a href = "../Visualizations/Humidity.html"> 
-                    <img class = "comparison_size panel" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a> 
-
-                </div>
-              </div>
                 
-              <div class = "row">
-                <div class = "col-md-6">
-                               
-                  <h3 style = "font-weight: bold;"> vs. Cloudiness </h3>
-                  <a href = "../Visualizations/Cloudiness.html"> 
-                    <img class = "comparison_size panel" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a> 
-  
-                </div>
-                <div class = "col-md-6">
-                               
-                  <h3 style = "font-weight: bold;"> vs. Wind Speed </h3>
-                  <a href = "../Visualizations/WindSpeed.html">
-                    <img class = "comparison_size panel" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a>
-  
-                </div>  
+                <div class = "row">
+                  <div class = "col-lg-6 col-sm-12" style = "padding-bottom: 5%; margin: 5% 0%;">
+                                
+                    <h3 style = "font-weight: bold; text-align: justify;"> vs. Cloudiness </h3>
+                    <a href = "../Visualizations/Cloudiness.html"> 
+                      <img class = "comparison_size panel" style = "margin: 0% -5%;" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a><br> 
+    
+                  </div>
+                  <div class = "col-lg-6 col-sm-12" style = "padding-bottom: 5%; margin: 5% 0%;">
+                                
+                    <h3 style = "font-weight: bold; text-align: justify;"> vs. Wind Speed </h3>
+                    <a href = "../Visualizations/WindSpeed.html">
+                      <img class = "comparison_size panel" style = "margin: 0% -5%;" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a><br>
+    
+                  </div>  
               </div>
+
+          </div>
 
         </div>
-
-      </div>
-    </div>    
+      <!--  
+      </div> -->
+    </div>      
     <!-- End Content  Grid-->
   
 

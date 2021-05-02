@@ -27,8 +27,9 @@
   <body>
     
     
-    <!-- Navigation Bar -->
-    <div class = "navigation">
+  <!-- Navigation Bar -->
+  <div class = "navigation">
+    <div class = "col-lg-12 col-sm-12">
       <nav class = "navbar navbar-expand-lg">
     
         <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../index.html"> HOME </a> <!--Main Color accent: #19B39C-->
@@ -68,7 +69,8 @@
 
       </nav>
     </div>
-    <!-- End Navigation Bar -->
+  </div>
+  <!-- End Navigation Bar -->
 
 
 
@@ -76,24 +78,24 @@
 
 
     <!-- Content Grid -->
-    <div class = "container">
+    <div class = "container" style = "padding: 2%">
       <div class = "row">
       
         
         <!-- Left Content Section -->
-        <div class="col-lg-7 col-sm-12" >
+        <div class = "col-lg-7 col-sm-12">
 
           <!-- Postions main graph/jpg offcenter left to allow more room/size -->
-          <div class = "box" style = "position:relative; left:-250px; top:5px;">
+          <div class = "box" style = "top:5px;">
           
             <!-- Font style change to title: BOLD, ITALIC, & UNDERLINE -->
-            <h1 class = "title" id = "BoldTalicLine" > WIND SPEED </h1>
+            <h2 id = "BoldTalicLine"; style = "text-align: left;"> WIND SPEED </h2>
             
               <!-- CSS to enlarge 'main' graph/jpg -->
-              <img class = "main-image" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "WindSpeed"><br>
+              <img class = "summary_size" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "WindSpeed">
         
               <!-- Paragraph first line is slightly indented, and paragraph overall (via CSS) is indented all around -->
-              <p style = "text-indent: 10px;">
+              <p style = "text-indent: 10px; text-align:justify;">
                 The wind speed worldwide, regardless of latitude and equatorial distance, doesn't seem to really go too much past 15mph,  
                 with most wind speeds being around 0-10 mph in most cities. Cities in the Northern Hemisphere tend to be windier, especially 
                 towards the northern pole.
@@ -108,52 +110,55 @@
         
         
         <!-- Right Content Section -->
-        <div class="col-lg-5 col-sm-12" >
-          <div class = "box" style = "position:relative; left:0px; top:5px;"> <!-- Format to mirror left side box -->
-
+        <div class = "col-lg-5 col-sm-11">
+          <div class = "box" style = "top:5px; width: 110%; padding-bottom:15px;"> <!-- Format to mirror left side box -->
             
-            <div class = "container">
+            
               <div class = "row">
                 <div class = "col-md-12">
               
-                  <h2 id = "BoldTalicLine"> VISUALIZATIONS </h2>
-                  <h5> Click on any plot to get an in-depth analysis. </h5>
+                  <h3 id = "BoldTalicLine"> VISUALIZATIONS </h3>
+                  <h5> Click on any plot to get an in-depth analysis. </h5><br>
 
                 </div>
               </div>
               
               
-              <div class = "row">
-                <div class = "col-sm-3 col-md-6">
-                             
-                  <h6> Max Temperature </h6>
+            <div class = "container">
+              <div class = "row" style = "margin: 0% 0%;">
+                <div class = "col-sm-6 col-md-6">
+  
+                  <h6 style = "text-align: justify;"> Max Temp </h6>
                   <a href = "../Visualizations/MaxTemp.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a> 
-
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a><br>
+                    
                 </div>
-                <div class = "col-sm-3 col-md-6">
-                             
-                  <h6> Humidity </h6>
+                
+                                
+                <div class = "col-sm-6 col-md-6">
+                
+                  <h6 style = "text-align: justify;"> Humidity </h6>
                   <a href = "../Visualizations/Humidity.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a> 
+                    <img class = "thumbnail panel" style = "margin: 0% 3%;" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a><br><br> 
 
                 </div>
               </div>
+              
+            
+              <div class = "row" style = "margin: 0% 0%;">
+                <div class = "col-sm-6 col-md-6">
                 
-              <div class = "row">
-                <div class = "col-sm-3 col-md-6">
-                               
-                  <h6> Cloudiness </h6>
+                  <h6 style = "text-align: justify;"> Cloudiness </h6>
                   <a href = "../Visualizations/Cloudiness.html"> 
-                    <img class = "thumbnail panel" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a> 
-  
+                    <img class = "thumbnail panel" style = "margin: 0% 0%;" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a><br> 
+
                 </div>
-                <div class = "col-sm-3 col-md-6">
-                               
-                  <h6> Wind Speed </h6>
+                <div class = "col-sm-6 col-md-6">
+                
+                  <h6 style = "text-align: justify;"> Wind Speed </h6>
                   <a href = "../Visualizations/WindSpeed.html">
-                    <img class = "thumbnail panel selected" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a>
-  
+                    <img class = "thumbnail panel selected" style = "margin: 0% 3%;" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a><br>
+
                 </div>  
               </div>
 
@@ -162,33 +167,30 @@
           </div>
         </div>
         <!-- End Right Content -->
-      
-      
+    
+    
       </div>
     </div>    
     <!-- End Content  Grid-->
   
+  
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    <!-- Footer Signature -->
+    <br><br>
+    <footer>
+      <div class="footer">&copy; Ithamar Francois (2021). </div>
+    </footer>
+
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
   <!-- End Body -->
-
-
-  <!------------------------------------------------------------------------------------------------------------------------------------------>
-  
-  
-  <!-- Footer Signature -->
-  <br><br>
-  <footer>
-    <div class="footer">&copy; Ithamar Francois (2021). </div>
-  </footer>
-
-
-  <!-- Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 
 </html>
 <!-- End HTML -->

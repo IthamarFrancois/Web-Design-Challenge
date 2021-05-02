@@ -14,8 +14,18 @@
   font-size: 20px;
   background-color: white;
   color: white;
-  margin-left: 15px;
-  border-radius: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  
+}
+
+.navbar-brandA {
+  padding: 5px;
+  font-size: 10px;
+  background-color: white;
+  color: white;
+  margin-left: 5px;
+  border-radius: 5px;
   
 }
 
@@ -29,12 +39,12 @@
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
 .navbar li {
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   background: white;
-  border-radius: 15px;
+  border-radius: 0px;
   margin: 5px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Getting rid of the default link styles here */
@@ -76,9 +86,15 @@
 
 } 
 
+.table-hover:hover {
+
+  color: rgb(101, 229, 238);
+
+}
+
 /* Add square border around mouse hover selections */
 .navbar-brand:hover {
-  color: rgb(101, 229, 238);
+  color: yellowgreen;
 }
 
 
@@ -88,6 +104,15 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   }
+
+/* Formatting of various font/titles */
+/* 
+h2 {
+  font-size: 40px;
+  padding-left: 15px;
+  text-align: center;
+}
+*/
 
 
 /* Formatting of various font/titles */
@@ -100,26 +125,28 @@ h1 {
 h2 {
   font-size: 40px;
   padding-left: 20px;
-  padding-right: 20px;
+  
   text-align: center;
 }
 
 
 h3 {
   font-size: 30px;
-  padding-left: 30px;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 5%;
   text-align: center;
 }
 
 h4 {
   font-size: 20px;
-  padding-left: 50px;
+  padding-left: 10px;
   text-align: center;
 }
 
 h5 {
-  font-size: 12px;
-  padding-left: 50px;
+  font-size: 15px;
+  color: #b31954;
   text-align: center;
 }
 
@@ -138,11 +165,11 @@ p {
 }
 
 
-
+/*
 .container {
-  display: flex;
-  flex-wrap: wrap;
+
 }
+*/ 
 
 
 #small_image{
@@ -161,8 +188,9 @@ p {
 
 
 .row {
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 2%;
+  
 }
 
 
@@ -172,11 +200,10 @@ p {
   
   background-color: white;
   color: #b31954;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 20px;
-  display: inline-block;
+  display: flex;
   flex-wrap: wrap;
+  
 }
 
 /* Same as main graphs, but only for the smaller preview graphs */
@@ -192,6 +219,15 @@ p {
   padding-right: 20px;
 }
 
+.compbox {
+
+  background-color: white;
+  color: #b31954;
+  margin-top: 20px;
+  padding: 10px 30px 10px;
+
+}
+
 
 /* Enlarges main graph */
 .main-image {
@@ -203,24 +239,25 @@ p {
 
 .comparison_size {
 
-  width: 600px;
-  
+  width: 100%;
+  height: 100%
+
 }
+
 
 .summary_size {
 
-  width: 500px;
+  width: 100%;
+  height: 75%;
 
 }
-
 
 /* Sets smaller graph's sizes/positions */
 .thumbnail {
 
-  width: 190px;
-  margin-right: 1px;
+  width: 100%;
   border: 1px solid #b31954;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
 
 }
 
@@ -309,4 +346,51 @@ footer {
     margin-left: 30px;
   }
 
+}
+
+@media only screen and (min-width: 500px) {
+  /* For tablets: */
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+}
+@media only screen and (min-width: 1000px) {
+  /* For desktop: */
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+} 
+
+@media only screen and (min-width: 1400px) {
+  /* For desktop: */
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-0 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
 }
