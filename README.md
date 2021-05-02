@@ -3,6 +3,8 @@
 Final Code/HTML - Ithamar Francois: 
 https://ithamarfrancois.github.io/Web-Design-Challenge/
 
+In the above link you will find the normal HTML homework assignment portion (website recreation), as well as a BONUS version of the website with another dataset (my own from API homework #6), fully integrated together and formatted for mulitple screen sizes. :)
+
 ## Background
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
