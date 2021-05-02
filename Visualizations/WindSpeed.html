@@ -1,0 +1,198 @@
+<!-- Reference code originally taken from class module "307-Stu_BootstrapComponents" -->
+
+<!DOCTYPE html>
+<html land="en">
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+  
+  <!-- Meta Set -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <!-- Bootstrap Stylesheet/CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../reset.css"> -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <title> WindSpeed </title> 
+
+  </head>
+  <!-- End Meta -->
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <!-- Body -->
+  <body>
+    
+    
+  <!-- Navigation Bar -->
+  <div class = "navigation">
+    <div class = "col-lg-12 col-sm-12">
+      <nav class = "navbar navbar-expand-lg">
+    
+        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../index.html"> HOME </a> <!--Main Color accent: #19B39C-->
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
+          <span class = "navbar-toggler-icon"> </span>
+        </button>
+
+        <a class = "navbar-brand" style = "background-color: #19B39C;" href = "../Visualizations/Bonus_WindSpeed.html"> BONUS WIND SPEED </a> <!--Main Color accent: #19B39C-->
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target= "#navbarNavDropdown" aria-controls = "navbarNavDropdown" aria-expanded = "false" aria-label = "Toggle Navigation">   
+          <span class = "navbar-toggler-icon"> </span>
+        </button>
+
+    
+        <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+          <ul class = "navbar-nav ml-auto">
+        
+            <li class = "nav-item dropdown">
+              
+              <!-- 'PLOTS' Dropdown Bar -->
+              <a class = "nav-link dropdown-toggle" href="#" id = "navbarNavDropdownMenuLink" role = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"> PLOTS </a>
+              <div class = "dropdown-menu" aria-labelledby = "navbarNavDropdownMenuLink">
+                <a class = "dropdown-item" href = "../Visualizations/MaxTemp.html"> Max Temperature </a>
+                <a class = "dropdown-item" href = "../Visualizations/Humidity.html"> Humidity </a>
+                <a class = "dropdown-item" href = "../Visualizations/Cloudiness.html"> Cloudiness </a>
+                <a class = "dropdown-item" href = "../Visualizations/WindSpeed.html"> Wind Speed </a>
+              </div>
+
+            </li>
+
+            <!-- 'Comparisons/Data' Bar options -->
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Comparisons.html"> COMPARISONS </a> </li>
+            <li class = "nav-item"> <a class = "nav-link" href = "../Visualizations/Data.html"> DATA </a> </li>
+        
+        
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+  <!-- End Navigation Bar -->
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    <!-- Content Grid -->
+    <div class = "container" style = "padding: 2%">
+      <div class = "row">
+      
+        
+        <!-- Left Content Section -->
+        <div class = "col-lg-7 col-sm-12">
+
+          <!-- Postions main graph/jpg offcenter left to allow more room/size -->
+          <div class = "box" style = "top:5px;">
+          
+            <!-- Font style change to title: BOLD, ITALIC, & UNDERLINE -->
+            <h2 id = "BoldTalicLine"; style = "text-align: left;"> WIND SPEED </h2>
+            
+              <!-- CSS to enlarge 'main' graph/jpg -->
+              <img class = "summary_size" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "WindSpeed">
+        
+              <!-- Paragraph first line is slightly indented, and paragraph overall (via CSS) is indented all around -->
+              <p style = "text-indent: 10px; text-align:justify;">
+                The wind speed worldwide, regardless of latitude and equatorial distance, doesn't seem to really go too much past 15mph,  
+                with most wind speeds being around 0-10 mph in most cities. Cities in the Northern Hemisphere tend to be windier, especially 
+                towards the northern pole.
+        
+              </p>
+            
+          </div>
+
+        </div>
+        <!-- End Left Content -->
+
+        
+        
+        <!-- Right Content Section -->
+        <div class = "col-lg-5 col-sm-11">
+          <div class = "box" style = "top:5px; width: 110%; padding-bottom:15px;"> <!-- Format to mirror left side box -->
+            
+            
+              <div class = "row">
+                <div class = "col-md-12">
+              
+                  <h3 id = "BoldTalicLine"> VISUALIZATIONS </h3>
+                  <h5> Click on any plot to get an in-depth analysis. </h5><br>
+
+                </div>
+              </div>
+              
+              
+            <div class = "container">
+              <div class = "row" style = "margin: 0% 0%;">
+                <div class = "col-sm-6 col-md-6">
+  
+                  <h6 style = "text-align: justify;"> Max Temp </h6>
+                  <a href = "../Visualizations/MaxTemp.html"> 
+                    <img class = "thumbnail panel" src = "../Resources/assets/images/1_vsMaxTemp.png" alt = "Latitude vs. Max Temp"> </a><br>
+                    
+                </div>
+                
+                                
+                <div class = "col-sm-6 col-md-6">
+                
+                  <h6 style = "text-align: justify;"> Humidity </h6>
+                  <a href = "../Visualizations/Humidity.html"> 
+                    <img class = "thumbnail panel" style = "margin: 0% 3%;" src = "../Resources/assets/images/2_vsHumidity.png" alt = "Latitude vs. Humidity"> </a><br><br> 
+
+                </div>
+              </div>
+              
+            
+              <div class = "row" style = "margin: 0% 0%;">
+                <div class = "col-sm-6 col-md-6">
+                
+                  <h6 style = "text-align: justify;"> Cloudiness </h6>
+                  <a href = "../Visualizations/Cloudiness.html"> 
+                    <img class = "thumbnail panel" style = "margin: 0% 0%;" src = "../Resources/assets/images/3_vsCloudiness.png" alt = "Latitude vs.Cloudiness"> </a><br> 
+
+                </div>
+                <div class = "col-sm-6 col-md-6">
+                
+                  <h6 style = "text-align: justify;"> Wind Speed </h6>
+                  <a href = "../Visualizations/WindSpeed.html">
+                    <img class = "thumbnail panel selected" style = "margin: 0% 3%;" src = "../Resources/assets/images/4_vsWindSpeed.png" alt = "Latitude vs. Wind Speed"> </a><br>
+
+                </div>  
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- End Right Content -->
+    
+    
+      </div>
+    </div>    
+    <!-- End Content  Grid-->
+  
+  
+  <!------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+    <!-- Footer Signature -->
+    <br><br>
+    <footer>
+      <div class="footer">&copy; Ithamar Francois (2021). </div>
+    </footer>
+
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+  <!-- End Body -->
+
+</html>
+<!-- End HTML -->
+
+<!--------------------------------------------------      Ithamar Francois      --------------------------------------------------------------------->
